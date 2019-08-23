@@ -1,0 +1,16 @@
+.nav-link {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: forestgreen;
+}
+
+.nav-link:hover, .active {
+    background-color: #33421C;
+}
+
+@media (max-width: 799px) {
+    .container {
+        width: 100vw;
+    }
+}

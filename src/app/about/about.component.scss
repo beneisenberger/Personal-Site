@@ -1,0 +1,22 @@
+.button {
+    width: 5vw;
+    margin: 10px;
+}
+
+.bio {
+    margin: 50px 50px;  
+    text-align: justify;
+}
+
+@media (min-width: 800px) {
+    .button {
+        width: 30px;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 799px) {
+    .container {
+        width: 100vw;
+    }
+}
