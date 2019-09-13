@@ -16,8 +16,14 @@ a, a:hover {
     text-decoration: none;
 }
 
-@media (min-width: 800px) {
+@media (lg) {
     .container {
         width: 700px;
+    }
+}
+
+@media (md) {
+    .container {
+        width: 100%;
     }
 }

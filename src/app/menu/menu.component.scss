@@ -9,8 +9,14 @@
     background-color: #33421C;
 }
 
-@media (max-width: 799px) {
+@media (lg) {
     .container {
-        width: 100vw;
+        width: 700px;
+    }
+}
+
+@media (sm) {
+    .container {
+        width: 100%;
     }
 }

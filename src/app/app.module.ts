@@ -10,6 +10,7 @@ import { BlogComponent } from './blog/blog.component';
 import { EventsComponent } from './events/events.component';
 import { MenuComponent } from './menu/menu.component';
 import { CodeComponent } from './code/code.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CodeComponent } from './code/code.component';
     BlogComponent,
     EventsComponent,
     MenuComponent,
-    CodeComponent
+    CodeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
