@@ -5,7 +5,9 @@ import { PostDashboardComponent } from './post-dashboard/post-dashboard.componen
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostService } from './post.service';
-import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from '../material.module';
+// import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [
   { path: 'blog/main', component: PostListComponent },
@@ -19,7 +21,9 @@ const routes: Routes = [
     PostDetailComponent, 
   ],
   imports: [
-    SharedModule,
+    // SharedModule,
+    FormsModule,
+    MaterialModule,
     RouterModule.forChild(routes)
   ],
   providers: [

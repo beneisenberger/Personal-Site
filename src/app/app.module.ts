@@ -7,9 +7,9 @@ import { AboutComponent } from './about/about.component';
 import { MediaComponent } from './media/media.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
-
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -27,6 +27,7 @@ import { SharedModule } from './shared/shared.module';
 import { PostsModule } from './posts/posts.module';
 import { Routes, RouterModule } from '@angular/router';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { MaterialModule } from './material.module';
 
 const routes: Routes = [
   { path: '', redirectTo: '/blog', pathMatch: 'full'},
@@ -55,8 +56,11 @@ const routes: Routes = [
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    MaterialModule,
     AppRoutingModule,
     CoreModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     PostsModule,
     TooltipModule.forRoot(),

@@ -1,18 +1,9 @@
-.submit-button {
-    margin-bottom: 30px;
-}
-
-.sub-container {
-    margin-left: 50px;
-    margin-right: 50px
-}
-
-.inner-text {
-    margin: 40px;
-}
-
-.center {
-    padding-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  
