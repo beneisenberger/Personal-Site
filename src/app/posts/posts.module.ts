@@ -7,6 +7,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostService } from './post.service';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
+import { CommonModule } from '@angular/common';
 // import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [
@@ -19,9 +20,11 @@ const routes: Routes = [
   declarations: [
     PostDashboardComponent, 
     PostDetailComponent, 
+    PostListComponent
   ],
   imports: [
     // SharedModule,
+    CommonModule,
     FormsModule,
     MaterialModule,
     RouterModule.forChild(routes)
