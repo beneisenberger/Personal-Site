@@ -1,15 +1,42 @@
 .nav-item {
-    margin: 0 15%;
-}
-
-body {
-    margin: 0;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 15%;
 }
 
 span:focus {
     outline: none;
     border: 0;
 }
+
 span {
     cursor: pointer;
 }
+
+.navbar-toggler {
+    background-color: white;
+    margin-left: auto;
+}
+
+.navbar {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+

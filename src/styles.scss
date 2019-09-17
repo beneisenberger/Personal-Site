@@ -1,11 +1,11 @@
 .container {
-    background-color: #33421C;
+    background-color: #333333;
     color: white;
 }
 
 body {
     color: white;
-    background-color: #CFC293;
+    background-color: #262626;
     font-family: 'Roboto Slab', serif;
     margin-top: 0px;
 }
@@ -15,14 +15,14 @@ a, a:hover {
     text-decoration: none;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
     .container {
-        width: 800px;
+        width: 100%;
     }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 769px) {
     .container {
-        width: 100%;
+        width: 700px;
     }
 }

@@ -13,3 +13,16 @@ span:focus {
 span {
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    mat-toolbar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    mat-toolbar {
+        width: 700px;
+        margin: 0 auto;
+    }
+}

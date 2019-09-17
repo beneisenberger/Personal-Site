@@ -1,6 +1,13 @@
+.ref {
+    display: flex;
+    justify-content: space-between; // flex-start | flex-end | center | space-around;
+    align-items: stretch;
+    padding: 40px 50px;
+}
+
 .button {
-    width: 5vw;
-    margin: 10px;
+    display: inline-block;
+    width: 40px;
 }
 
 .bio {
@@ -9,13 +16,6 @@
 }
 
 .main-img {
-    width: 40%;
-    height: 40%;
-}
-
-@media (min-width: 800px) {
-    .button {
-        width: 30px;
-        margin: 8px;
-    }
+    width: 100%;
+    margin-top: 15px;
 }
