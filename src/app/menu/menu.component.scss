@@ -1,22 +1,15 @@
-.nav-link {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: forestgreen;
+.nav-item {
+    margin: 0 15%;
 }
 
-.nav-link:hover, .active {
-    background-color: #33421C;
+body {
+    margin: 0;
 }
 
-@media (lg) {
-    .container {
-        width: 700px;
-    }
+span:focus {
+    outline: none;
+    border: 0;
 }
-
-@media (sm) {
-    .container {
-        width: 100%;
-    }
+span {
+    cursor: pointer;
 }
