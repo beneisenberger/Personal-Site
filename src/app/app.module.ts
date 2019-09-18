@@ -45,7 +45,7 @@ const routes: Routes = [
     MenuComponent,
     CodeComponent,
     LoginComponent,
-    PostListComponent
+    // PostListComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { PostService } from '../post.service';
 import { Observable } from 'rxjs';
 import { AngularFireStorage } from 'angularfire2/storage';
 import { finalize } from 'rxjs/operators';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-post-dashboard',
@@ -19,8 +20,9 @@ export class PostDashboardComponent implements OnInit {
   buttonText: string = "Post";
   uploadPercent: Observable<number>;
   downloadUrl: Observable<string>;
+  dialogRef: any;
 
-  constructor(private auth: AuthService, private postService: PostService, private storage: AngularFireStorage) { }
+  constructor(public dialog: MatDialog, private auth: AuthService, private postService: PostService, private storage: AngularFireStorage) { }
 
   ngOnInit() {
   }
@@ -38,6 +40,8 @@ export class PostDashboardComponent implements OnInit {
     this.title = "";
     this.content = "";
     this.buttonText = "Post Successful!";
+
+    this.dialogRef.close();
     setTimeout(() => this.buttonText = "Post", 3000);
   }
 

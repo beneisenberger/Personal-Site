@@ -1,1 +1,27 @@
-<p>code works!</p>
+<div class="container col-12">
+
+<h2 class="title center">Individual Projects</h2>
+<mat-card class="example-card" *ngFor="let individual of individual">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="title">{{individual.name}} - [<a href="{{individual.github}}">view code</a>] [<a href="{{individual.link}}">view site</a>]</mat-card-title>
+    </mat-card-header>
+    <img class="margin" mat-card-image src="{{individual.img}}">
+    <mat-card-content>
+      <p>{{individual.desc}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <h2 class="title center">Group Projects</h2>
+<mat-card class="example-card" *ngFor="let group of group">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="title">{{group.name}} - [<a href="{{group.github}}">view code</a>] [<a href="{{group.link}}">view site</a>]</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{group.img}}">
+    <mat-card-content>
+      <p>{{group.desc}}</p>
+    </mat-card-content>
+  </mat-card>
+
+</div>

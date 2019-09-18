@@ -3,7 +3,7 @@
         <i>in case you wanted to know</i>
         <span class="spacer"></span>
         <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
-            <button mat-raised-button color="accent" routerLink="/blog/dashboard">Write a Post</button>
+            <button mat-raised-button color="accent" (click)="writePost()">Write a Post</button>
             <button mat-button (click)="auth.logout()">Log Out</button>
         </div>
         <ng-template #showLogin>
