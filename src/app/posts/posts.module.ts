@@ -8,6 +8,7 @@ import { PostService } from './post.service';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
 import { CommonModule } from '@angular/common';
+import { FormatDatePipe } from '../format-date.pipe';
 // import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   declarations: [
     PostDashboardComponent, 
     PostDetailComponent, 
-    PostListComponent
+    PostListComponent,
+    FormatDatePipe
   ],
   imports: [
     // SharedModule,

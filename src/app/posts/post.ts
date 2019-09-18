@@ -1,3 +1,6 @@
+import { firestore } from 'firebase/app';
+import Timestamp = firestore.Timestamp;
+
 export class Post {
     id?: string
     title: string
@@ -5,5 +8,5 @@ export class Post {
     authorId: string
     content: string
     image: string
-    published: Date
+    published: Timestamp | Date
 }

@@ -6,3 +6,13 @@
 .submit-button {
     margin-left: 85%;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw 30px 5vw;
+}
+
+::ng-deep input.mat-input-element {
+    color: white
+  }

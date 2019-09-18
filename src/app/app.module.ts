@@ -28,6 +28,7 @@ import { PostsModule } from './posts/posts.module';
 import { Routes, RouterModule } from '@angular/router';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { MaterialModule } from './material.module';
+import { FormatDatePipe } from './format-date.pipe';
 
 const routes: Routes = [
   { path: '', redirectTo: '/blog', pathMatch: 'full'},
@@ -45,7 +46,8 @@ const routes: Routes = [
     MenuComponent,
     CodeComponent,
     LoginComponent,
-    // PostListComponent
+    // PostListComponent,
+    // FormatDatePipe,
   ],
   imports: [
     BrowserModule,
