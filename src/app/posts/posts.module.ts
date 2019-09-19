@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
 import { CommonModule } from '@angular/common';
 import { FormatDatePipe } from '../format-date.pipe';
-// import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [
   { path: 'blog/main', component: PostListComponent },
@@ -25,7 +24,6 @@ const routes: Routes = [
     FormatDatePipe
   ],
   imports: [
-    // SharedModule,
     CommonModule,
     FormsModule,
     MaterialModule,

@@ -12,7 +12,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  name: "";
+  message: "";
   email = new FormControl('', [Validators.required, Validators.email]);
 
   getErrorMessage() {

@@ -14,9 +14,14 @@ export class BlogComponent implements OnInit {
   constructor(public dialog: MatDialog, public auth: AuthService) { }
 
   writePost(): void {
+    if (this.auth.authState.uid === "uk5hhJRosjc6pgMiFHrlBTg53b93") {
     const dialogRef = this.dialog.open(PostDashboardComponent, {
-      width: '70vw',
+      width: '50vw',
     });
+    }
+    else {
+      alert("Please don't post on my blog :(");
+    }
   }
 
   ngOnInit() {

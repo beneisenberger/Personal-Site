@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -62,6 +63,7 @@ const routes: Routes = [
     AppRoutingModule,
     CoreModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     SharedModule,
     PostsModule,
