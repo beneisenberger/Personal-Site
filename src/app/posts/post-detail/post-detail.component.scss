@@ -10,3 +10,57 @@ img {
 mat-form-field {
     width: 100%;
 }
+
+.authorDiv {
+    width: 100%;
+}
+
+.authorImage {
+    float: left;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.commentsImage {
+    float: left;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.authorText {
+    float: left;
+    width: 88%;
+    margin-top: 20px;
+}
+
+.commentListText {
+    margin-left: 10px;
+}
+
+.commentDelete {
+    float: right;
+}
+
+.commentBox {
+    float: left;
+    width: 88%;
+}
+
+.commentText {
+    margin-bottom: auto;
+    float: left;
+}
+
+.commentImage {
+    float: left;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.done {
+    padding-bottom: 40px;
+}

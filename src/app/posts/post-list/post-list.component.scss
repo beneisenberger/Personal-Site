@@ -4,7 +4,7 @@ section {
     grid-template-rows: auto;
     grid-gap: 10px;
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 mat-card {
@@ -19,4 +19,30 @@ img {
 mat-card-content:focus {
     outline: none;
     border: 0;
+}
+
+mat-card-header {
+    width: 100%;
+}
+
+.authorImage {
+    float: left;
+    width: 8%;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+.authorText {
+    float: left;
+    width: 80%;
+}
+
+.footer {
+    width: 100%;
+}
+
+.bottom-center .bottom-left {
+    float: right;
+}
+.bottom-right {
+    float: right;
 }

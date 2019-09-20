@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 import { FormatDatePipe } from '../format-date.pipe';
 
 const routes: Routes = [
-  { path: 'blog/main', component: PostListComponent },
+  { path: 'blog/list', component: PostListComponent },
   { path: 'blog/:id', component: PostDetailComponent },
   { path: 'blog/dashboard', component: PostDashboardComponent }
 ]
@@ -20,8 +20,8 @@ const routes: Routes = [
   declarations: [
     PostDashboardComponent, 
     PostDetailComponent, 
-    PostListComponent,
-    FormatDatePipe
+    // PostListComponent,
+    // FormatDatePipe
   ],
   imports: [
     CommonModule,

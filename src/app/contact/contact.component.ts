@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { AngularFireStorage } from 'angularfire2/storage';
+import { Form } from '../posts/post';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 
 @Component({
   selector: 'app-contact',
@@ -8,18 +11,39 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  checked: boolean = false;
   name: "";
   message: "";
   email = new FormControl('', [Validators.required, Validators.email]);
 
+  constructor(private afs: AngularFirestore) { 
+    this.formCollection = this.afs.collection('form', ref =>
+    ref.orderBy('email', 'desc'));
+  }
+
+  formCollection: AngularFirestoreCollection<Form>
+  formDoc: AngularFirestoreDocument<Form>
+
+  ngOnInit() {
+  }
+  
   getErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
         this.email.hasError('email') ? 'Not a valid email' :
             '';
+  }
+
+  submit(email, checked, name, message) {
+    const data: Form = {
+      email: email.value.toString(),
+      checked: checked,
+      name: name,
+      message: message
+    }
+    this.formCollection.add(data);
+    this.name = "";
+    this.message = "";
+    alert("Thank you, your message has been submitted");
   }
 
 }

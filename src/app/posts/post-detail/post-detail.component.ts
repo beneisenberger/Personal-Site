@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { PostService } from '../post.service';
-import { Post } from '../post';
+import { Post, Comment } from '../post';
 import { AuthService } from 'src/app/core/auth.service';
+import { AngularFirestoreDocument, AngularFirestore } from 'angularfire2/firestore';
 
 @Component({
   selector: 'app-post-detail',
@@ -11,20 +12,52 @@ import { AuthService } from 'src/app/core/auth.service';
 })
 export class PostDetailComponent implements OnInit {
 
-  post: Post;
-  editing: boolean = false;
+  commentDoc: AngularFirestoreDocument<Comment>
 
-  constructor(private route: ActivatedRoute, private postService: PostService, private router: Router, public auth: AuthService) { }
+  post: Post;
+  comments: Comment[];
+  editing: boolean = false;
+  postId: string;
+  currentUserImage: string = "";
+
+  constructor(private afs: AngularFirestore, private route: ActivatedRoute, private router: Router, private postService: PostService, private auth: AuthService) {
+   }
+
+
 
   ngOnInit() {
     this.getPost();
-    console.log(this);
+    this.getComments();
+    this.postId = this.route.snapshot.paramMap.get('id');
+    // this.currentUserImage = this.auth.authState.photoURL;
+    this.auth.afAuth.user.subscribe(user => 
+      this.currentUserImage = user.photoURL
+    )
   }
 
   getPost() {
     const id = this.route.snapshot.paramMap.get('id');
     return this.postService.getPostData(id).subscribe(data => this.post = data)
   }
+  getComments() {
+    const postId = this.route.snapshot.paramMap.get('id');
+    return this.postService.getCommentData(postId).subscribe(data => {
+      this.comments = [...data]
+    });
+  }
+
+  createComment(content: string) {
+    const data = {
+      author: this.auth.authState.displayName || this.auth.authState.email,
+      authorId: this.auth.currentUserId,
+      authorImage: this.auth.authState.photoURL,
+      content: content,
+      published: new Date(),
+      postId: this.postId
+    }
+    this.postService.createComment(data);
+    }
+
 
   updatePost() {
     const formData = {
@@ -35,6 +68,7 @@ export class PostDetailComponent implements OnInit {
     this.postService.update(id, formData);
     this.editing = false;
   }
+  
 
   delete() {
     const id = this.route.snapshot.paramMap.get('id');
@@ -42,4 +76,10 @@ export class PostDetailComponent implements OnInit {
     this.router.navigate(["/blog"]);
   }
 
+  deleteComment(id: string) {
+    this.commentDoc = this.afs.doc<Comment>(`comments/${id}`)
+    this.commentDoc.delete();
+  }
+  
+  
 }

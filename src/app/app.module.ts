@@ -11,6 +11,7 @@ import { BlogComponent } from './blog/blog.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -30,10 +31,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { MaterialModule } from './material.module';
 import { FormatDatePipe } from './format-date.pipe';
+// import { PostDetailComponent } from './posts/post-detail/post-detail.component';
+// import { PostDashboardComponent } from './posts/post-dashboard/post-dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/blog', pathMatch: 'full'},
-  { path: '', loadChildren: './posts/posts.module#PostsModule'}
+  { path: '', loadChildren: './posts/posts.module#PostsModule'},
+  // { path: 'blog/main', component: PostListComponent },
+  // { path: 'blog/:id', component: PostDetailComponent },
+  // { path: 'blog/dashboard', component: PostDashboardComponent }
 ]
 
 @NgModule({
@@ -47,8 +53,8 @@ const routes: Routes = [
     MenuComponent,
     CodeComponent,
     LoginComponent,
-    // PostListComponent,
-    // FormatDatePipe,
+    PostListComponent,
+    FormatDatePipe,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +66,7 @@ const routes: Routes = [
     AngularFireAuthModule,
     AngularFireStorageModule,
     MaterialModule,
+    MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     CoreModule,
     FormsModule,

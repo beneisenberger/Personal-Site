@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../post';
+import { Post, Comment } from '../post';
 import { PostService } from '../post.service';
 import { Observable } from 'rxjs';
 import { AuthService } from 'src/app/core/auth.service';
@@ -10,15 +10,20 @@ import { AuthService } from 'src/app/core/auth.service';
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent implements OnInit {
-  posts: Observable<Post[]>
-  constructor(private postsService: PostService, public auth: AuthService) { }
+
+  posts: Observable<Post[]>;
+  commentNumber: Observable<number>;
+  comments: Object = this.postService.commentsCollection;
+
+  constructor(private postService: PostService, public auth: AuthService) { }
 
   ngOnInit() {
-    this.posts = this.postsService.getPosts();
+    this.posts = this.postService.getPosts();
   }
 
   delete(id: string) {
-    this.postsService.delete(id);
+    this.postService.delete(id);
   }
-
+  
 }
+

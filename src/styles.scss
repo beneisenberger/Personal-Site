@@ -7,10 +7,6 @@
     text-align: center;
 }
 
-.title {
-    padding: 100px 0 50px 0;
-}
-
 body {
     color: white !important;
     background-color: #262626;
@@ -33,13 +29,13 @@ a, a:hover {
  }
 
 @media (max-width: 768px) {
-    .container {
+    .container, mdb-navbar {
         width: 100%;
     }
 }
 
 @media (min-width: 769px) {
-    .container {
-        width: 700px;
+    .container, mdb-navbar {
+        width: 769px;
     }
 }

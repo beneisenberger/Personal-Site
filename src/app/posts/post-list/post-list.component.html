@@ -3,12 +3,23 @@
         <mat-card-content routerLink="{{post.id}}">
             <img src="{{post.image}}" alt="{{post.title}}">
             <h2>{{post.title}}</h2>
-            <p><small>Posted by {{post.author}} &bull; on {{post.published | formatDate}}</small></p>
         </mat-card-content>
-        <mat-card-actions align="end" *ngIf="auth.currentUserId === post.authorId">
-            <button mat-icon-button color="primary" (click)="delete(post.id)">
-                <mat-icon>delete</mat-icon>
-            </button>
-        </mat-card-actions>
+        <div>
+            <img [src]="post.authorImage" class="authorImage"><p class="authorText"><small>Posted by {{post.author}} &bull; on {{post.published | formatDate}}</small></p>
+        </div>
+
+        <div class="footer">
+                <button mat-icon-button class="bottom-left" color="primary" (click)="comment(post.id)">
+                    <mat-icon>question_answer</mat-icon>
+                </button>
+                <a routerLink="{{post.id}}"><i><small class="bottom-center">67 comments</small></i></a>
+
+            <mat-card-actions *ngIf="auth.currentUserId === post.authorId">
+                <button class="bottom-right" mat-icon-button color="primary" (click)="delete(post.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-card-actions>
+        </div>
+
     </mat-card>
 </section>

@@ -1,20 +1,5 @@
-.nav-width {
-    margin: auto;
-    background-color: #262626;
-}
-
-.navbar-nav {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-span:focus {
-    outline: none;
-    border: 0;
-}
-
-span {
-    cursor: pointer;
+.container .navbar {
+    width: 769px;
 }
 
 .navbar-toggler {
@@ -22,24 +7,17 @@ span {
     margin-left: auto;
 }
 
-.navbar {
-    background-color: #262626;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 10px 50px;
-}
 
 @media (max-width: 768px) {
-    .navbar {
+    .container {
         width: 100%;
     }
 }
 
 @media (min-width: 769px) {
-    .navbar {
-        width: 700px;
-        margin: 0 auto;
+    .container, nav {
+        width: 769px;
+        // margin: 0 auto;
     }
 }
 

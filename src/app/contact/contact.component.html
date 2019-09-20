@@ -5,7 +5,7 @@
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <br>
-      <mat-checkbox>Join my email list?</mat-checkbox>
+      <mat-checkbox ng-checked="true" [(ngModel)]="checked">Join my email list?</mat-checkbox>
   
     <mat-form-field>
       <input matInput placeholder="Name" [(ngModel)]="name">
@@ -15,5 +15,5 @@
       <textarea matInput placeholder="Message" [(ngModel)]="message"></textarea>
     </mat-form-field>
 
-    <button mat-button >Submit</button>
+    <button mat-button (click)="submit(email, checked, name, message)">Submit</button>
   </div>

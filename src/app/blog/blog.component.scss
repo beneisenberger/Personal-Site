@@ -14,10 +14,6 @@ span {
     cursor: pointer;
 }
 
-mat-toolbar {
-    padding-top: 63px;
-}
-
 @media (max-width: 768px) {
     mat-toolbar {
         width: 100%;
@@ -26,7 +22,7 @@ mat-toolbar {
 
 @media (min-width: 769px) {
     mat-toolbar {
-        width: 700px;
+        width: 769px;
         margin: 0 auto;
     }
 }
