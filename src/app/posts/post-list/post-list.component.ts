@@ -12,7 +12,7 @@ import { AuthService } from 'src/app/core/auth.service';
 export class PostListComponent implements OnInit {
 
   posts: Observable<Post[]>;
-  commentNumber: Observable<number>;
+  commentNumber: number[];
   comments: Object = this.postService.commentsCollection;
 
   constructor(private postService: PostService, public auth: AuthService) { }

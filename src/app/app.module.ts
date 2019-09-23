@@ -37,9 +37,6 @@ import { FormatDatePipe } from './format-date.pipe';
 const routes: Routes = [
   { path: '', redirectTo: '/blog', pathMatch: 'full'},
   { path: '', loadChildren: './posts/posts.module#PostsModule'},
-  // { path: 'blog/main', component: PostListComponent },
-  // { path: 'blog/:id', component: PostDetailComponent },
-  // { path: 'blog/dashboard', component: PostDashboardComponent }
 ]
 
 @NgModule({

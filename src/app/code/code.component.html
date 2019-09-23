@@ -4,7 +4,7 @@
 <mat-card class="example-card" *ngFor="let individual of individual">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title class="title2">{{individual.name}} - [<a href="{{individual.github}}" target="_blank">view code</a>]</mat-card-title>
+      <mat-card-title><h2 class="title2">{{individual.name}} - [<a href="{{individual.github}}" target="_blank">view code</a>] [<a href="{{individual.link}}" target="_blank">view in browser</a>]</h2></mat-card-title>
     </mat-card-header>
     <img class="margin" mat-card-image src="{{individual.img}}">
     <mat-card-content>
@@ -16,9 +16,9 @@
 <mat-card class="example-card" *ngFor="let group of group">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title class="title2">{{group.name}} - [<a href="{{group.github}}" target="_blank">view code</a>]</mat-card-title>
+      <mat-card-title class="title2">{{group.name}} - [<a href="{{group.github}}" target="_blank">view code</a>] [<a href="{{group.link}}" target="_blank">view in browser</a>]</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src="{{group.img}}">
+    <img class="margin" mat-card-image src="{{group.img}}">
     <mat-card-content>
       <p>{{group.desc}}</p>
     </mat-card-content>

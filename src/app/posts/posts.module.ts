@@ -20,8 +20,8 @@ const routes: Routes = [
   declarations: [
     PostDashboardComponent, 
     PostDetailComponent, 
-    // PostListComponent,
-    // FormatDatePipe
+    PostListComponent,
+    FormatDatePipe
   ],
   imports: [
     CommonModule,

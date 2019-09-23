@@ -36,17 +36,6 @@ export class PostService {
     }))
   }
 
-  // getComments() {
-  //   return this.commentsCollection.snapshotChanges().pipe(map(actions => {
-  //     return actions.map(x => {
-  //       const data = x.payload.doc.data() as Comment
-  //       const id = x.payload.doc.id;
-  //       return { id, ...data}
-  //     })
-  //   }))
-  // }
-  
-
 
   /////////////
 
@@ -88,6 +77,9 @@ export class PostService {
 
   delete(id: string) {
     return this.getPost(id).delete();
+  }
+  deleteComment(id: string) {
+    return this.getComment(id).delete();
   }
 
   ////////////

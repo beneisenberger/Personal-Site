@@ -1,13 +1,14 @@
 mat-card {
     margin: 10px auto;
     max-width: 700px;
-}
-
-img {
-    width: 100%;
+    background-color: lightgrey;
 }
 
 mat-form-field {
+    width: 100%;
+}
+
+img {
     width: 100%;
 }
 
@@ -15,52 +16,21 @@ mat-form-field {
     width: 100%;
 }
 
-.authorImage {
-    float: left;
-    width: 30px;
-    border-radius: 50%;
-    margin-right: 5%;
-    margin-top: 10px;
-}
-
-.commentsImage {
-    float: left;
-    width: 30px;
-    border-radius: 50%;
-}
-
-.authorText {
-    float: left;
-    width: 88%;
-    margin-top: 20px;
-}
-
-.commentListText {
-    margin-left: 10px;
-}
-
-.commentDelete {
-    float: right;
-}
-
-.commentBox {
-    float: left;
-    width: 88%;
-}
-
 .commentText {
-    margin-bottom: auto;
-    float: left;
+    padding-top: 3%;
 }
 
 .commentImage {
-    float: left;
     width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin-right: 5px;
-    margin-top: 8px;
+    margin: 2% 3%;
 }
 
-.done {
-    padding-bottom: 40px;
+mat-card-footer {
+    padding: 3%;
+}
+
+.footerImage {
+    padding-left: 6% !important;
 }

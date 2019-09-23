@@ -4,6 +4,7 @@ import { PostService } from '../post.service';
 import { Post, Comment } from '../post';
 import { AuthService } from 'src/app/core/auth.service';
 import { AngularFirestoreDocument, AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-post-detail',
@@ -13,14 +14,14 @@ import { AngularFirestoreDocument, AngularFirestore } from 'angularfire2/firesto
 export class PostDetailComponent implements OnInit {
 
   commentDoc: AngularFirestoreDocument<Comment>
-
   post: Post;
   comments: Comment[];
   editing: boolean = false;
   postId: string;
   currentUserImage: string = "";
+  content: string = "";
 
-  constructor(private afs: AngularFirestore, private route: ActivatedRoute, private router: Router, private postService: PostService, private auth: AuthService) {
+  constructor(private afs: AngularFirestore, private route: ActivatedRoute, private router: Router, private postService: PostService, public auth: AuthService) {
    }
 
 
@@ -29,7 +30,6 @@ export class PostDetailComponent implements OnInit {
     this.getPost();
     this.getComments();
     this.postId = this.route.snapshot.paramMap.get('id');
-    // this.currentUserImage = this.auth.authState.photoURL;
     this.auth.afAuth.user.subscribe(user => 
       this.currentUserImage = user.photoURL
     )
@@ -76,9 +76,9 @@ export class PostDetailComponent implements OnInit {
     this.router.navigate(["/blog"]);
   }
 
-  deleteComment(id: string) {
-    this.commentDoc = this.afs.doc<Comment>(`comments/${id}`)
-    this.commentDoc.delete();
+  deleteComment() {
+    const commentid = this.route.snapshot.paramMap.get('id');
+    this.postService.deleteComment(commentid);
   }
   
   

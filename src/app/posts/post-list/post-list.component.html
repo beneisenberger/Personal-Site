@@ -1,25 +1,21 @@
 <section class="container">
-    <mat-card *ngFor="let post of posts | async">
-        <mat-card-content routerLink="{{post.id}}">
-            <img src="{{post.image}}" alt="{{post.title}}">
-            <h2>{{post.title}}</h2>
-        </mat-card-content>
-        <div>
-            <img [src]="post.authorImage" class="authorImage"><p class="authorText"><small>Posted by {{post.author}} &bull; on {{post.published | formatDate}}</small></p>
+
+    <div class="blog-card" *ngFor="let post of posts | async">
+        <div class="meta">
+            <div class="photo" [style.backgroundImage]="'url('+ post.image +')'"></div>
+            <ul class="details">
+                
+                <li class="author">posted by:<br><img class="authorImage" src="{{post.authorImage}}"> {{post.author}}</li>
+                <li class="date">{{post.published | formatDate}}</li>
+            </ul>
         </div>
-
-        <div class="footer">
-                <button mat-icon-button class="bottom-left" color="primary" (click)="comment(post.id)">
-                    <mat-icon>question_answer</mat-icon>
-                </button>
-                <a routerLink="{{post.id}}"><i><small class="bottom-center">67 comments</small></i></a>
-
-            <mat-card-actions *ngIf="auth.currentUserId === post.authorId">
-                <button class="bottom-right" mat-icon-button color="primary" (click)="delete(post.id)">
-                    <mat-icon>delete</mat-icon>
-                </button>
-            </mat-card-actions>
+        <div class="description">
+            <h1>{{post.title}}</h1>
+            <p>{{ post.content | slice:0:100 }}{{post.content.length > 100 ? '...' : ''}}</p>
+            <p class="read-more">
+                <a routerLink="{{post.id}}">Read More</a>
+            </p>
         </div>
+    </div>
 
-    </mat-card>
 </section>

@@ -1,6 +1,6 @@
 <ng-container *ngIf="post">
     <div [hidden]="!editing">
-        <mat-card>
+        <mat-card color="#333">
             <h2>Update Post</h2>
 
             <mat-form-field>
@@ -20,9 +20,9 @@
         <mat-card>
             <img src="{{post.image}}" alt="{{post.title}}">
 
-            <div class="authorDiv">
-                <img class="authorImage" [src]="post.authorImage">
-                <p class="authorText">posted by {{post.author}} &bull; {{post.published | formatDate}}</p>
+            <div class="authorDiv row">
+                <img class="commentImage" [src]="post.authorImage">
+                <p class="commentText col-9">posted by {{post.author}} &bull; {{post.published | formatDate}}</p>
             </div>
 
             <mat-card-content>
@@ -40,28 +40,28 @@
             </mat-card-actions>
 
             <mat-card *ngFor="let comment of comments">
-            <mat-card-content>
+                <!-- <mat-card-content> -->
                 <div *ngIf="comment">
-                        <div class="authorDiv">
-                                <img class="authorImage" [src]="comment.authorImage">
-                                <p class="authorText">posted by {{comment.author}} &bull; {{comment.published | formatDate}}</p>
-                            </div>
-                    <p class="commentListText">{{comment.content}}</p>
-                    <button *ngIf="auth.currentUserId === comment.authorId" mat-icon-button color="primary" class="commentDelete"
-                        (click)="deleteComment()">
-                        <mat-icon>delete</mat-icon>
-                    </button>
+                    <div class="authorDiv row">
+                        <img class="commentImage" [src]="comment.authorImage">
+                        <p class="commentText col-9">posted by {{comment.author}} &bull; {{comment.published | formatDate}}</p>
+                        <button *ngIf="auth.currentUserId === comment.authorId" mat-icon-button color="primary"
+                            class="col-1" (click)="deleteComment()">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                    <p class="commentListText col-12">{{comment.content}}</p>
                 </div>
-            </mat-card-content>
+                <!-- </mat-card-content> -->
             </mat-card>
 
 
             <mat-card-footer>
-                <div *ngIf="auth.currentUserId">
-                    <h3 class="commentText">Write a comment:</h3>
-                    <div mat-card-avatar><img class="commentImage" src="{{currentUserImage}}"></div>
-                    <input type="text" class="commentBox" [(ngModel)]="content">
-                    <button class="done" mat-icon-button color="primary" (click)="createComment(content)">
+                <div *ngIf="auth.currentUserId" class="row">
+                    <h3 class="col-12">Write a comment:</h3>
+                    <div mat-card-avatar><img class="commentImage footerImage" src="{{currentUserImage}}"></div>
+                    <input type="text" class="col-9" [(ngModel)]="content">
+                    <button class="done col-1" mat-icon-button color="primary" (click)="createComment(content)">
                         <mat-icon>done</mat-icon>
                     </button>
                 </div>

@@ -10,8 +10,11 @@
 body {
     color: white !important;
     background-color: #262626;
-    font-family: 'Roboto Slab', serif;
     margin-top: 0px;
+}
+
+body p {
+    font-family: 'Barlow', sans-serif !important;
 }
 
 a, a:hover {

@@ -24,25 +24,25 @@ export class CodeComponent implements OnInit {
       desc: "Obviously, a good first introduction to some of my web development style should come from my personal website, which you're looking at right now! This website is built with Angular 8, and also uses both Bootstrap and Angular Material for design. The blog is built as well, using Firebase as a host for the posts and Google to authenticate the login (to post to the blog).",
       img: "./assets/personal-site.png",
       github: "https://github.com/beneisenberger/Personal-Site",
-      link: ""
+      link: "https://beneisenberger.com"
     },    {
       name: "Health Inspector Records",
       desc: "Another shameless nod and plug for myself, this Angluar application describes the small cassette label that I run out of Omaha. There is a page for the artists and descriptions, as well as their work displayed in order of release (with links to Apple Music, Spotify, etc) -- there is also an online store with add-to-cart and checkout functions.",
       img: "./assets/health-inspector-records.png",
       github: "https://github.com/beneisenberger/health-inspector-records",
-      link: ""
+      link: "https://health-inspector-records.firebaseapp.com/"
     },    {
       name: "OMDB Search",
       desc: "A delightfully Easter-themed practice into retreiving data from APIs - this movie search Angular SPA allows the user to search the OMDB API for either a title, year, or type of movie query, and return the results displayed neatly via flex, and while updating in real time.",
       img: "./assets/omdb-search.png",
-      github: "",
-      link: ""
+      github: "https://github.com/beneisenberger/omdb-search",
+      link: "https://omdb-search-41df4.firebaseapp.com/"
     },    {
     name: "Blackjack Game",
     desc: "What would learning web development be without a JavaScript-based classic game? This version of Blackjack has play/start, hit and hold buttons, as well as a special '11 or 1' option that will come up if you draw an ace.",
     img: "./assets/blackjack.png",
     github: "https://github.com/beneisenberger/Black-Jack",
-    link: ""
+    link: "https://beneisenberger.github.io/Black-Jack/index.html"
   }
   ];
 
