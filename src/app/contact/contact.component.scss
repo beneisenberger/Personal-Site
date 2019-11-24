@@ -11,8 +11,13 @@
     display: flex;
     flex-direction: column;
     padding: 0 5vw 30px 5vw;
+    min-height: 100vh;
 }
 
 ::ng-deep input.mat-input-element {
     color: white
   }
+
+textarea {
+    height: 200px;
+}

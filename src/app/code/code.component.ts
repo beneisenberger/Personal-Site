@@ -7,7 +7,6 @@ export interface Section {
   github: string;
   link: string;
 }
-
 /**
  * @title List with sections
  */
@@ -33,23 +32,20 @@ export class CodeComponent implements OnInit {
       github: "https://github.com/beneisenberger/health-inspector-records",
       link: "https://health-inspector-records.firebaseapp.com/"
     },    
-    {
-      name: "OMDB Search",
-      desc: "A delightfully Easter-themed practice into retreiving data from APIs - this movie search Angular SPA allows the user to search the OMDB API for either a title, year, or type of movie query, and return the results displayed neatly via flex, and while updating in real time.",
-      img: "./assets/omdb-search.png",
-      github: "https://github.com/beneisenberger/omdb-search",
-      link: "https://omdb-search-41df4.firebaseapp.com/"
-    },    
-    {
-    name: "Blackjack Game",
-    desc: "What would learning web development be without a JavaScript-based classic game? This version of Blackjack has play/start, hit and hold buttons, as well as a special '11 or 1' option that will come up if you draw an ace.",
-    img: "./assets/blackjack.png",
-    github: "https://github.com/beneisenberger/Black-Jack",
-    link: "https://beneisenberger.github.io/Black-Jack/index.html"
-    }
-  ];
-
-  group: Section[] = [
+    // {
+    //   name: "OMDB Search",
+    //   desc: "A delightfully Easter-themed practice into retreiving data from APIs - this movie search Angular SPA allows the user to search the OMDB API for either a title, year, or type of movie query, and return the results displayed neatly via flex, and while updating in real time.",
+    //   img: "./assets/omdb-search.png",
+    //   github: "https://github.com/beneisenberger/omdb-search",
+    //   link: "https://omdb-search-41df4.firebaseapp.com/"
+    // },    
+    // {
+    // name: "Blackjack Game",
+    // desc: "What would learning web development be without a JavaScript-based classic game? This version of Blackjack has play/start, hit and hold buttons, as well as a special '11 or 1' option that will come up if you draw an ace.",
+    // img: "./assets/blackjack.png",
+    // github: "https://github.com/beneisenberger/Black-Jack",
+    // link: "https://beneisenberger.github.io/Black-Jack/index.html"
+    // }
     {
       name: "Dual Learning App",
       desc: "For our final project of the Midland Code Academy, my seven classmates and I reworked some code of the previous Code Adememy cohort, and combied two of the projects they did into one. For the Quiz Whip (quiz-making and taking app) portion of the site, the code is essentially a re-write. I was the client lead or 'product manager' for this project, and also helped to design the site and with most of the logic in the quiz display and how the results are shown on the dashboard. We are using Angular to build the project, and the backend is handled with Google Firebase/Firestore.",
@@ -61,15 +57,15 @@ export class CodeComponent implements OnInit {
       name: "budgetBuddy",
       desc: "For a complete full-stack project, my group created a financial budgeting application in Angular. The donut graph will fill to represent any income that you give it, and will be covered with expenses as you enter them. The expenses are color-coded by what type of expense the represent, and the individual/total figures are added together and stored in a SQL database pertaining to the user, who can also register and log in to the application.",
       img: "",
-      github: "",
-      link: ""
+      github: "https://github.com/beneisenberger/Budget-Buddy",
+      link: "https://budgetbuddy1.herokuapp.com/main"
     },    
     {
       name: "Cosmic Music Search",
-      desc: "A bit more of a sophisticated version of a music search, this application can also store a user's favorite songs into a favorites list or a playist - of which multiple can be created. This uses the Deezer API to make requests, and retreives song clips to function as the songs themselves. The user can also obviously register and log in, and everything is stored in local storage.",
+      desc: "A bit more of a sophisticated version of a music search from my initial attempt, this application can also store a user's favorite songs into a favorites list or a playist - of which multiple can be created. This uses the Deezer API to make requests, and retreives song clips to function as the songs themselves. The user can also obviously register and log in, and everything is stored in local storage.",
       img: "./assets/cosmic-music-player.png",
       github: "https://github.com/beneisenberger/Music-Search-API",
-      link: ""
+      link: "https://cosmic-music-search.firebaseapp.com"
     }
   ];
 

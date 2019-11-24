@@ -50,8 +50,8 @@ const routes: Routes = [
     MenuComponent,
     CodeComponent,
     LoginComponent,
-    PostListComponent,
-    FormatDatePipe,
+    // PostListComponent,
+    // FormatDatePipe,
   ],
   imports: [
     BrowserModule,

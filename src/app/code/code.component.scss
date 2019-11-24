@@ -11,3 +11,19 @@ mat-card {
 a {
     color: navy;
 }
+
+.card-thing {
+    padding: 20px 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: darken;
+}
+
+a {
+    color: white;
+}
+
+.card-image {
+    background-color: rgba(0,0,0,0.0);
+}
