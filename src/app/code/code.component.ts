@@ -24,7 +24,14 @@ export class CodeComponent implements OnInit {
       img: "./assets/personal-site.png",
       github: "https://github.com/beneisenberger/Personal-Site",
       link: "https://beneisenberger.com"
-    },    
+    }, 
+    {
+      name: "Envisioned Solution",
+      desc: "I designed and coded the frontend for Envisioned Solution, a web development services company that I also am currently freelancing for. The site uses a simple contact form, biographies, and CSS transitions to make everything fall into place more smoothly.",
+      img: "./assests/esomaha.png",
+      github: "",
+      link: "http://esomaha.com"
+    },   
     {
       name: "Health Inspector Records",
       desc: "Another shameless nod and plug for myself, this Angluar application describes the small cassette label that I run out of Omaha. There is a page for the artists and descriptions, as well as their work displayed in order of release (with links to Apple Music, Spotify, etc) -- there is also an online store with add-to-cart and checkout functions.",
