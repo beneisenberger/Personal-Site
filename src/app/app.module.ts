@@ -31,8 +31,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { MaterialModule } from './material.module';
 import { FormatDatePipe } from './format-date.pipe';
-// import { PostDetailComponent } from './posts/post-detail/post-detail.component';
-// import { PostDashboardComponent } from './posts/post-dashboard/post-dashboard.component';
+import { PostDetailComponent } from './posts/post-detail/post-detail.component';
+import { PostDashboardComponent } from './posts/post-dashboard/post-dashboard.component';
+
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
 
 const routes: Routes = [
   { path: '', redirectTo: '/blog', pathMatch: 'full'},
@@ -50,8 +52,8 @@ const routes: Routes = [
     MenuComponent,
     CodeComponent,
     LoginComponent,
-    // PostListComponent,
-    // FormatDatePipe,
+    PostListComponent,
+    FormatDatePipe,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +73,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     SharedModule,
     PostsModule,
+    NgxAudioPlayerModule,
     TooltipModule.forRoot(),
     CollapseModule.forRoot()
   ],

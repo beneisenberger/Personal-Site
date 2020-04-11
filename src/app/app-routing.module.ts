@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostDashboardComponent } from './posts/post-dashboard/post-dashboard.component';
 import { PostDetailComponent } from './posts/post-detail/post-detail.component';
+import { Y2020Component } from './events/y2020/y2020.component';
 import { Y2019Component } from './events/y2019/y2019.component';
 import { Y2018Component } from './events/y2018/y2018.component';
 import { Y2017Component } from './events/y2017/y2017.component';
@@ -19,6 +20,8 @@ import { Y2013Component } from './events/y2013/y2013.component';
 import { Y2012Component } from './events/y2012/y2012.component';
 import { Y2011Component } from './events/y2011/y2011.component';
 import { Y2010Component } from './events/y2010/y2010.component';
+import { victimsOfCircumstanceKey } from '../environments/environment'
+import { Album2Component } from './media/album2/album2.component';
 
 
 const routes: Routes = [
@@ -27,9 +30,11 @@ const routes: Routes = [
   {path: 'blog/main', component: PostListComponent},
   {path: 'blog/dashboard', component: PostDashboardComponent},
   {path: 'blog/:id', component: PostDetailComponent},
-  {path: 'media', component: MediaComponent},
+  {path: 'media', component: MediaComponent}, 
+  {path: `${victimsOfCircumstanceKey}`, component: Album2Component},
   {path: 'events', component: EventsComponent,
     children: [
+      {path: 'y2020', component: Y2020Component},
       {path: 'y2019', component: Y2019Component},
       {path: 'y2018', component: Y2018Component},
       {path: 'y2017', component: Y2017Component},

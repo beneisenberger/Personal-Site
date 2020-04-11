@@ -10,3 +10,7 @@ export const environment = {
     appId: "1:284657334490:web:73016c06ca02def1d98de3"
   }
 };
+
+export const victimsOfCircumstanceKey: string = 'fj43i204g8udsfh0243jrnlfds2034';
+
+export const benKey: string = 'uk5hhJRosjc6pgMiFHrlBTg53b93';

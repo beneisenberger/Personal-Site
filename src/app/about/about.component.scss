@@ -14,3 +14,12 @@
     object-fit: contain;
     padding-top: 5%;
 }
+
+.container {
+    min-height: calc(100vh - 52px);
+}
+
+strong {
+    margin-right: 12px;
+    font-style: bold !important;
+}
