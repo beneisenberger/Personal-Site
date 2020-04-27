@@ -26,12 +26,12 @@ import { Album2Component } from './media/album2/album2.component';
 
 const routes: Routes = [
   {path: 'about', component: AboutComponent},
+  {path: 'fjifoeisjifodjw324rtjfg408vdf80', component: Album2Component},
   {path: 'blog', component: BlogComponent},
   {path: 'blog/main', component: PostListComponent},
   {path: 'blog/dashboard', component: PostDashboardComponent},
   {path: 'blog/:id', component: PostDetailComponent},
   {path: 'media', component: MediaComponent}, 
-  {path: 'fjifoeisjifodjw324rtjfg408vdf80', component: Album2Component},
   {path: 'events', component: EventsComponent,
     children: [
       {path: 'y2020', component: Y2020Component},
