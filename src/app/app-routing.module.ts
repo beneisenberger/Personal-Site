@@ -31,7 +31,7 @@ const routes: Routes = [
   {path: 'blog/dashboard', component: PostDashboardComponent},
   {path: 'blog/:id', component: PostDetailComponent},
   {path: 'media', component: MediaComponent}, 
-  {path: `${victimsOfCircumstanceKey}`, component: Album2Component},
+  {path: 'fjifoeisjifodjw324rtjfg408vdf80', component: Album2Component},
   {path: 'events', component: EventsComponent,
     children: [
       {path: 'y2020', component: Y2020Component},
