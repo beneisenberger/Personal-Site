@@ -1,14 +1,30 @@
 h3 {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 p {
-    margin-left: 50px;
-    margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .container {
-    padding-bottom: 20px;
-    min-height: 100vh;
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
+.years {
+  box-shadow: none !important;
+}
+
+.nav-item a {
+  color: #0e1720 !important;
+}
+
+.active a {
+  color: #d1dde0 !important;
+}
+
+.page {
+  margin-bottom: 150px;
 }

@@ -1,5 +1,5 @@
 .container .navbar {
-    width: 769px;
+  width: 769px;
 }
 
 // .navbar-toggler {
@@ -7,17 +7,34 @@
 //     margin-left: auto;
 // }
 
+.nav-item {
+  text-align: center;
+  padding-top: 15px;
+  a {
+    color: #0e1720 !important;
+    font-weight: 500;
+  }
+}
+
+.nav-link {
+  height: 60px !important;
+  width: 153.8px !important;
+}
+
+.active a {
+  color: #d1dde0 !important;
+}
 
 @media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 769px) {
-    .container, nav {
-        width: 769px;
-        // margin: 0 auto;
-    }
+  .container,
+  nav {
+    width: 769px;
+    // margin: 0 auto;
+  }
 }
-

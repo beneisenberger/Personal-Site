@@ -1,23 +1,33 @@
 img {
-    height: 350px;
+  height: 350px;
 }
 
 .icon {
-    margin: 10px 5px;
-    font-size: 30px;
+  margin: 10px 5px;
+  font-size: 30px;
 }
 
 section {
-    padding: 20px 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
-    background-color: rgba(0,0,0,0.7);
-    background-blend-mode: darken;
+  padding: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  margin: 30px 0;
+  color: #0e1720;
+}
+
+section:nth-child(5) {
+  margin-bottom: 150px;
+}
+
+a {
+  color: #d1dde0;
 }
 
 @media (max-width: 500px) {
-    section {
-        background-size: auto 100%;
-    }
+  section {
+    background-size: auto 100%;
+  }
 }

@@ -1,23 +1,34 @@
-<div class="container col-12">
+<div class="container col-12 fade-in">
+  <h2 class="center title">Music</h2>
 
-    <h2 class="center title">Music</h2>
+  <section
+    class="music-embed row"
+    *ngFor="let music of music"
+    [style.background-image]="'url(' + music.backgroundImage + ')'"
+  >
+    <div class="col-12 artist">
+      <h3>
+        <b>{{ music.artist }}</b>
+      </h3>
+      <p>{{ music.description }}</p>
+      <h3><b>Releases:</b></h3>
+      <p *ngFor="let release of music.releases">{{ release }}</p>
 
-    <section class="music-embed row" *ngFor="let music of music" [style.background-image]="'url('+music.backgroundImage+')'">
-        <iframe *ngIf="displayBandcamp" class="col-4" style="border: 0; width: 250px; height: 392px;"
-            [src]="sanitizer.bypassSecurityTrustResourceUrl(music.embed.album)"
-            seamless><a href="{{music.embed.link}}">{{music.embed.title}}</a></iframe>
-        <div class="col-8 artist">
-            <h3><b>{{music.artist}}</b></h3>
-            <p>{{music.description}}</p>
-            <h3><b>Releases:</b></h3>
-            <p *ngFor="let release of music.releases">{{release}}</p>
-
-            <a class="icon" href="{{music.social.spotify}}"><mdb-icon fab icon="spotify"></mdb-icon></a>
-            <a class="icon" href="{{music.social.apple}}"><mdb-icon fab icon="itunes"></mdb-icon></a>
-            <a class="icon" href="{{music.social.bandcamp}}"><mdb-icon fab icon="bandcamp"></mdb-icon></a>
-            <a class="icon" href="{{music.social.discogs}}"><mdb-icon fas icon="dot-circle"></mdb-icon></a>
-            
-        </div>
-    </section>
-
+      <a class="icon" href="{{ music.social.spotify }}"
+        ><mdb-icon fab icon="spotify"></mdb-icon
+      ></a>
+      <a class="icon" href="{{ music.social.apple }}"
+        ><mdb-icon fab icon="itunes"></mdb-icon
+      ></a>
+      <a class="icon" href="{{ music.social.bandcamp }}"
+        ><mdb-icon fab icon="bandcamp"></mdb-icon
+      ></a>
+      <a
+        style="margin-bottom: 200px;"
+        class="icon"
+        href="{{ music.social.discogs }}"
+        ><mdb-icon fas icon="dot-circle"></mdb-icon
+      ></a>
+    </div>
+  </section>
 </div>

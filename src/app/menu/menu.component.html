@@ -1,76 +1,22 @@
-<div class="container col-12">
-
-<mdb-navbar SideClass="navbar navbar-expand-md navbar-dark" [containerInside]="false">
-  <!-- Collapsible content -->
+<mdb-navbar
+  SideClass="navbar navbar-expand-md ie-nav fixed-top"
+  [containerInside]="false"
+>
   <links>
-
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/blog">Blog</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">About<span
-            class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/code">Code</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/media">Music</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/events">Events</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact">Contact</a>
-      </li>
-
-    </ul>
-
-    <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link" href="http://linkedin.com/in/beneisenberger" target="_blank">
-          <mdb-icon fab icon="linkedin"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://twitter.com/beneisenberger" target="_blank">
-          <mdb-icon fab icon="twitter"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://www.facebook.com/beneisenbergermusic" target="_blank">
-          <mdb-icon fab icon="facebook"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://instagram.com/beneisenberger" target="_blank">
-          <mdb-icon fab icon="instagram"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://open.spotify.com/artist/3KtcHSwAEQ3zYYDnxYaF7m" target="_blank">
-          <mdb-icon fab icon="spotify"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://github.com/beneisenberger" target="_blank">
-          <mdb-icon fab icon="github"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://youtube.com/user/bristlehead" target="_blank">
-          <mdb-icon fab icon="youtube"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://beneisenberger.bandcamp.com" target="_blank">
-          <mdb-icon fab icon="bandcamp"></mdb-icon>
-        </a>
-      </li>
-    </ul>
+    <div class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/about">About</a>
+    </div>
+    <div class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/code">Code</a>
+    </div>
+    <div class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/media">Music</a>
+    </div>
+    <div class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/events">Events</a>
+    </div>
+    <div class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </div>
   </links>
-
 </mdb-navbar>
-
-</div>

@@ -1,58 +1,115 @@
-<div class="container col-12">
-    <h2 class="title center">Calendar</h2>
-    <br>
-    <h3><b>/// Upcoming ///</b></h3>
+<div class="container col-12 fade-in page">
+  <h2 class="title center">Calendar</h2>
+  <br />
+  <h3><b>/// Upcoming ///</b></h3>
 
-    <p>12/02/19 - 12/08/19 - Contracted guitarist for <i>Legally Blonde: The Musical</i> at Papillion La Vista South High School</p>
-    <p>01/31/20 - 02/16/20 - Contracted guitarist for <i>Mamma Mia</i> at Performing Arts Repertory Theater</p>
-    <p>04/17/20 - 05/10/20 - Contracted guitarist for <i>Bright Star</i> at Omaha Community Playhouse</p>
+  <p>
+    12/02/19 - 12/08/19 - Contracted guitarist for
+    <i>Legally Blonde: The Musical</i> at Papillion La Vista South High School
+  </p>
+  <p>
+    01/31/20 - 02/16/20 - Contracted guitarist for <i>Mamma Mia</i> at
+    Performing Arts Repertory Theater
+  </p>
+  <p>
+    04/17/20 - 05/10/20 - Contracted guitarist for <i>Bright Star</i> at Omaha
+    Community Playhouse
+  </p>
 
-    <br><br>
+  <br /><br />
 
-    <h3 class="archived"><b>/// Archived ///</b></h3>
+  <h3 class="archived"><b>/// Archived ///</b></h3>
 
-    <mdb-navbar SideClass="navbar navbar-expand-md navbar-dark" [containerInside]="false">
-        <!-- Collapsible content -->
-        <links>
+  <mdb-navbar
+    class="navbar navbar-expand-md navbar-dark years"
+    [containerInside]="false"
+  >
+    <!-- Collapsible content -->
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2019"
+            >2019<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2018"
+            >2018</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2017"
+            >2017</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2016"
+            >2016</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2015"
+            >2015</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2014"
+            >2014</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2013"
+            >2013</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2012"
+            >2012</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2011"
+            >2011</a
+          >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a
+            class="nav-link waves-light"
+            mdbWavesEffect
+            routerLink="/events/y2010"
+            >2010</a
+          >
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
 
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2019">2019<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2018">2018</a>
-                    </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2017">2017</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2016">2016</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2015">2015</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2014">2014</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2013">2013</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2012">2012</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2011">2011</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/events/y2010">2010</a>
-                </li>
-            </ul>
-
-        </links>
-
-    </mdb-navbar>
-
-    <router-outlet></router-outlet>
-    
+  <router-outlet></router-outlet>
 </div>

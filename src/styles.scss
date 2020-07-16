@@ -1,44 +1,75 @@
 .container {
-    background-color: #333333;
-    color: white;
+  background-color: #d1dde0;
+  color: #0e1720;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fixed-top {
+  background-color: #648061 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  height: 60px !important;
+  padding-left: calc(50% - 384.5px) !important;
+}
+
+.navbar-nav {
+  margin-right: 0 !important;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 body {
-    color: white !important;
-    background-color: #92a795;
-    margin-top: 0px;
+  background-color: #d1dde0;
+  margin-top: 0px;
 }
 
 body p {
-    font-family: 'Barlow', sans-serif !important;
+  font-family: "Barlow", sans-serif !important;
 }
 
-a, a:hover {
-    color: palegreen;
-    text-decoration: none;
+a,
+a:hover {
+  color: #d1dde0;
+  text-decoration: none;
 }
 
 .mat-form-field-appearance-legacy {
-    .mat-form-field-underline{
-    background-color: palegreen;
-    }
-    .mat-form-field-label{
-        color: white;
-    }
- }
+  .mat-form-field-underline {
+    background-color: #2b2a44;
+  }
+  .mat-form-field-label {
+    color: #0e1720;
+  }
+}
 
 @media (max-width: 768px) {
-    .container, mdb-navbar {
-        width: 100%;
-    }
+  .container,
+  mdb-navbar {
+    width: 100%;
+  }
 }
 
 @media (min-width: 769px) {
-    .container, mdb-navbar {
-        width: 769px;
-    }
+  .container,
+  mdb-navbar {
+    width: 769px;
+  }
 }

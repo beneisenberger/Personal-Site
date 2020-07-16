@@ -1,29 +1,44 @@
-.margin {
-    margin: 20px;
-    width: calc(100% - 40px);
+.code-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  min-height: 100%;
+  margin: 100px 0 150px 0;
+}
+
+.repeater {
+  margin: 2% 0;
+}
+
+.buttons {
+  max-width: 300px;
+  position: relative;
+  top: 10px;
+  a {
+    background-color: #2b2a44;
+    max-width: 140px;
+    margin: 0 4px;
+  }
 }
 
 mat-card {
-    margin: 30px;
-    background-color: lightgrey;
+  margin: 30px;
+  background-color: lightgrey;
 }
 
 a {
-    color: navy;
+  color: #2b2a44;
 }
 
 .card-thing {
-    padding: 20px 0;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: rgba(0,0,0,0.8);
-    background-blend-mode: darken;
+  padding: 20px 0;
+  background-size: 100% auto;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
 }
 
 a {
-    color: white;
-}
-
-.card-image {
-    background-color: rgba(0,0,0,0.0);
+  color: #d1dde0;
 }

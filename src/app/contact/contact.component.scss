@@ -1,23 +1,27 @@
 .sub-container {
-    margin: 0 5vw;
-    padding-bottom: 30px;
+  margin: 0 5vw;
+  padding-bottom: 30px;
 }
 
 .submit-button {
-    margin-left: 85%;
+  margin-left: 85%;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 5vw 30px 5vw;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw 30px 5vw;
+  min-height: 100vh;
 }
 
 ::ng-deep input.mat-input-element {
-    color: white
-  }
+  color: #0e1720;
+}
 
 textarea {
-    height: 200px;
+  height: 200px;
+}
+
+.top {
+  margin-top: 90px;
 }
