@@ -7,7 +7,6 @@ import { AppComponent } from "./app.component";
 import { AboutComponent } from "./about/about.component";
 import { MediaComponent } from "./media/media.component";
 import { ContactComponent } from "./contact/contact.component";
-import { BlogComponent } from "./blog/blog.component";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
 import { CollapseModule, BsDropdownModule } from "ngx-bootstrap";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -27,13 +26,8 @@ import { CodeComponent } from "./code/code.component";
 import { LoginComponent } from "./login/login.component";
 import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
-import { PostsModule } from "./posts/posts.module";
 import { Routes, RouterModule } from "@angular/router";
-import { PostListComponent } from "./posts/post-list/post-list.component";
 import { MaterialModule } from "./material.module";
-import { FormatDatePipe } from "./format-date.pipe";
-// import { PostDetailComponent } from './posts/post-detail/post-detail.component';
-// import { PostDashboardComponent } from './posts/post-dashboard/post-dashboard.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/blog", pathMatch: "full" },
@@ -46,14 +40,11 @@ const routes: Routes = [
     AboutComponent,
     MediaComponent,
     ContactComponent,
-    BlogComponent,
     EventsComponent,
     MenuComponent,
     FooterComponent,
     CodeComponent,
     LoginComponent,
-    // PostListComponent,
-    // FormatDatePipe,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +63,6 @@ const routes: Routes = [
     HttpClientModule,
     ReactiveFormsModule,
     SharedModule,
-    PostsModule,
     TooltipModule.forRoot(),
     CollapseModule.forRoot(),
   ],

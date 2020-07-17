@@ -29,7 +29,7 @@ export class CodeComponent implements OnInit {
       name: "Envisioned Solution",
       desc:
         "I designed and coded the frontend for Envisioned Solution, a web development services company that I also am currently freelancing for. The site uses a simple contact form, biographies, and CSS transitions to make everything fall into place more smoothly.",
-      img: "./assests/esomaha.png",
+      img: "./assets/esomaha.png",
       github: "",
       link: "http://esomaha.com",
     },
