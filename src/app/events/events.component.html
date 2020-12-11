@@ -3,110 +3,35 @@
   <br />
   <h3><b>/// Upcoming ///</b></h3>
 
-  <p>It's COVID y'all</p>
+  <p>
+    11/27/20 - Ben Eisenberger Livestream for Around the Campfire Black Friday
+  </p>
+  <p>
+    12/11/20 - Ben Eisenberger "Soloists" Release Livestream w/ Ryan Menchaca,
+    Tom Bartolomei, B.B. Sledge
+    <a href="https://www.youtube.com/watch?v=5y138zQTfzQ"
+      >https://www.youtube.com/watch?v=5y138zQTfzQ</a
+    >
+  </p>
 
   <br /><br />
 
   <h3 class="archived"><b>/// Archived ///</b></h3>
 
-  <mdb-navbar
-    class="navbar navbar-expand-md navbar-dark years"
-    [containerInside]="false"
-  >
-    <!-- Collapsible content -->
-    <links>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2020"
-            >2020<span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2019"
-            >2019</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2018"
-            >2018</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2017"
-            >2017</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2016"
-            >2016</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2015"
-            >2015</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2014"
-            >2014</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2013"
-            >2013</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2012"
-            >2012</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2011"
-            >2011</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link waves-light"
-            mdbWavesEffect
-            routerLink="/events/y2010"
-            >2010</a
-          >
-        </li>
-      </ul>
-    </links>
-  </mdb-navbar>
+  <!-- Collapsible content -->
+  <div class="events-container">
+    <a routerLink="/events/y2020">'20<span class="sr-only">(current)</span></a>
+    <a routerLink="/events/y2019">'19</a>
+    <a routerLink="/events/y2018">'18</a>
+    <a routerLink="/events/y2017">'17</a>
+    <a routerLink="/events/y2016">'16</a>
+    <a routerLink="/events/y2015">'15</a>
+    <a routerLink="/events/y2014">'14</a>
+    <a routerLink="/events/y2013">'13</a>
+    <a routerLink="/events/y2012">'12</a>
+    <a routerLink="/events/y2011">'11</a>
+    <a routerLink="/events/y2010">'10</a>
+  </div>
 
   <router-outlet></router-outlet>
 </div>

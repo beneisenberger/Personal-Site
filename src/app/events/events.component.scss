@@ -11,6 +11,7 @@ p {
 .container {
   padding-bottom: 20px;
   min-height: 100vh;
+  max-width: 700px;
 }
 
 .years {
@@ -27,4 +28,10 @@ p {
 
 .page {
   margin-bottom: 150px;
+}
+
+.events-container {
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 40px;
 }

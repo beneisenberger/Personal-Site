@@ -24,7 +24,7 @@
   background-color: #648061 !important;
   box-shadow: none !important;
   padding: 0 !important;
-  height: 75px !important;
+  height: 40px !important;
   padding-left: calc(50% - 384.5px) !important;
 }
 
@@ -68,6 +68,14 @@ a:hover {
   .mat-form-field-label {
     color: #0e1720;
   }
+}
+
+.list-inline {
+  margin-bottom: 0 !important;
+}
+
+.page-footer {
+  padding-top: 10px  !important;
 }
 
 @media (max-width: 768px) {

@@ -9,7 +9,7 @@
 
 .nav-item {
   text-align: center;
-  padding-top: 15px;
+  height: 40px;
   a {
     color: #d1dde0 !important;
     font-weight: 500;
@@ -23,6 +23,8 @@
 
 .active a {
   color: black !important;
+  background: #d1dde0 !important;
+  height: 40px !important
 }
 
 @media (max-width: 768px) {
