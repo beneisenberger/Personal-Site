@@ -1,6 +1,53 @@
-.container {
-  background-color: #d1dde0;
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/ben8.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #0e1720;
+  margin: 0;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  color: white;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .container div {
+    width: 600px;
+  }
+}
+
+.title {
+  font-size: 60px !important;
+  text-transform: uppercase;
+  font-style: italic !important;
+  line-height: 40px !important;
+  margin: 40px 0 !important;
+}
+
+.mini-title {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 30px !important;
+  text-transform: uppercase;
+  font-style: italic !important;
+  line-height: 20px !important;
+  margin: 30px 0 !important;
 }
 
 .fade-in {
@@ -21,11 +68,10 @@
 }
 
 .fixed-top {
-  background-color: #648061 !important;
+  background-color: black !important;
   box-shadow: none !important;
   padding: 0 !important;
   height: 40px !important;
-  padding-left: calc(50% - 384.5px) !important;
 }
 
 .navbar-nav {
@@ -33,32 +79,24 @@
 }
 
 .navbar-collapse {
-  background-color: #648061;
+  background-color: black;
 }
-
-// fixed-top,
-// span {
-//   background-color: white !important;
-//   margin-left: 20px;
-// }
 
 .center {
   text-align: center;
 }
 
-body {
-  background-color: #d1dde0;
-  margin-top: 0px;
+@media (min-width: 769px) {
+  .fixed-top {
+    padding-left: calc(50% - 307.6px) !important;
+  }
 }
 
-body p {
-  font-family: "Barlow", sans-serif !important;
-}
-
-a,
-a:hover {
-  color: #d1dde0;
-  text-decoration: none;
+@media (max-width: 768px) {
+  .nav-item a {
+    margin: 0;
+    width: 100% !important;
+  }
 }
 
 .mat-form-field-appearance-legacy {
@@ -75,7 +113,7 @@ a:hover {
 }
 
 .page-footer {
-  padding-top: 10px  !important;
+  padding-top: 10px !important;
 }
 
 @media (max-width: 768px) {

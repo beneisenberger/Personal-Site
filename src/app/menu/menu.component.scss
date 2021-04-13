@@ -1,30 +1,21 @@
-.container .navbar {
-  width: 769px;
-}
-
-// .navbar-toggler {
-//     background-color: white;
-//     margin-left: auto;
-// }
-
 .nav-item {
   text-align: center;
   height: 40px;
   a {
-    color: #d1dde0 !important;
+    color: white !important;
     font-weight: 500;
   }
 }
 
 .nav-link {
   height: 60px !important;
-  width: 153.8px !important;
+  width: 153.8px;
 }
 
 .active a {
   color: black !important;
-  background: #d1dde0 !important;
-  height: 40px !important
+  background: white !important;
+  height: 40px !important;
 }
 
 @media (max-width: 768px) {

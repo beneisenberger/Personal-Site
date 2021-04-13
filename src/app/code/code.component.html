@@ -1,11 +1,11 @@
-<div class="container fade-in">
+<div class="fade-in">
   <div class="code-container">
     <div *ngFor="let individual of individual" class="repeater">
       <div class="card-thing">
         <img [src]="individual.img" />
       </div>
       <div class="buttons">
-        <h3 style="color: #72716e; text-align: center;">
+        <h3 style="color: #72716e; text-align: center">
           {{ individual.name }}
         </h3>
         <a class="btn" href="{{ individual.link }}"

@@ -1,37 +1,28 @@
-<div class="container col-12 fade-in page">
-  <h2 class="title center">Calendar</h2>
-  <br />
-  <h3><b>/// Upcoming ///</b></h3>
+<div class="container fade-in">
+  <div>
+    <h1 class="title">Calendar</h1>
+    <h2 class="subtitle">Upcoming</h2>
+    <p>It's COVID, y'all</p>
+    <h2 class="subtitle">Archived</h2>
 
-  <p>
-    11/27/20 - Ben Eisenberger Livestream for Around the Campfire Black Friday
-  </p>
-  <p>
-    12/11/20 - Ben Eisenberger "Soloists" Release Livestream w/ Ryan Menchaca,
-    Tom Bartolomei, B.B. Sledge
-    <a href="https://www.youtube.com/watch?v=5y138zQTfzQ"
-      >https://www.youtube.com/watch?v=5y138zQTfzQ</a
-    >
-  </p>
-
-  <br /><br />
-
-  <h3 class="archived"><b>/// Archived ///</b></h3>
-
-  <!-- Collapsible content -->
-  <div class="events-container">
-    <a routerLink="/events/y2020">'20<span class="sr-only">(current)</span></a>
-    <a routerLink="/events/y2019">'19</a>
-    <a routerLink="/events/y2018">'18</a>
-    <a routerLink="/events/y2017">'17</a>
-    <a routerLink="/events/y2016">'16</a>
-    <a routerLink="/events/y2015">'15</a>
-    <a routerLink="/events/y2014">'14</a>
-    <a routerLink="/events/y2013">'13</a>
-    <a routerLink="/events/y2012">'12</a>
-    <a routerLink="/events/y2011">'11</a>
-    <a routerLink="/events/y2010">'10</a>
+    <!-- Collapsible content -->
+    <div class="events-container">
+      <a routerLink="/events/y2020"
+        >'20<span class="sr-only">(current)</span></a
+      >
+      <a routerLink="/events/y2019">'19</a>
+      <a routerLink="/events/y2018">'18</a>
+      <a routerLink="/events/y2017">'17</a>
+      <a routerLink="/events/y2016">'16</a>
+      <a routerLink="/events/y2015">'15</a>
+      <a routerLink="/events/y2014">'14</a>
+      <a routerLink="/events/y2013">'13</a>
+      <a routerLink="/events/y2012">'12</a>
+      <a routerLink="/events/y2011">'11</a>
+      <a routerLink="/events/y2010">'10</a>
+    </div>
+    <div class="fade-in">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-
-  <router-outlet></router-outlet>
 </div>
